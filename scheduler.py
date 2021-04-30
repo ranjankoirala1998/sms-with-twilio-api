@@ -3,9 +3,9 @@ import time
 from app import send_sms
 
 def job() :
-    send_sms()
+    print("I am running...")
 
-schedule.every(10).minutes.do(job)
+schedule.every(10).seconds.do(job)
 
 # schedule.every().day.at("10:15").do(job)
 # schedule.every().day.at("12:15").do(job)
